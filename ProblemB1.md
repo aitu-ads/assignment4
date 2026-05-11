@@ -10,7 +10,7 @@ You are given an `n` by `n` matrix `isConnected` where `isConnected[i][j] = 1` i
 
 Return *the total number* of **provinces**.
 
-Write your solution in [src/ProblemB1.java](src/ProblemB1.java)ts
+Write your solution in [src/ProblemB1.java](src/ProblemB1.java)
 
 #### Example 1:
 
