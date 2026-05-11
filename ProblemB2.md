@@ -1,4 +1,4 @@
-### Problem B2. Find If Path Exists
+### Problem B2. Find if Path Exists in Graph
 
 There is a **bi-directional** graph with `n` vertices, where each vertex is labeled from `0` to `n-1` (**inclusive**).
 The edges in the graph are represented as a 2D integer array `edges`, where each `edges[i] = {u, v}` denotes a bi-directional edge between vertex `u` and vertex `v`.
