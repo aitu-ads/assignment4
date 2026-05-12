@@ -48,14 +48,14 @@ Explanation: Team 2 is weaker than team 0 and team 1. Team 3 is weaker than team
 
 #### Constraints
 
-```
-1 <= n <= 100
-m == edges.length
-0 <= m <= n * (n - 1) / 2
-edges[i].length == 2
-0 <= edge[i][j] <= n - 1
-edges[i][0] != edges[i][1]
-The input is generated such that if team u is stronger than team v, team v is not stronger than team u.
-The input is generated such that if team u is stronger than team v and team v is stronger than team w, then team u is stronger than team w.
+
++ `1 <= n <= 100`
++ `m == edges.length`
++ `0 <= m <= n * (n - 1) / 2`
++ `edges[i].length == 2`
++ `0 <= edge[i][j] <= n - 1`
++ `edges[i][0] != edges[i][1]`
++ The input is generated such that if team `u` is stronger than team `v`, team `v` is not stronger than team `u`.
++ The input is generated such that if team `u` is stronger than team `v` and team `v` is stronger than team `w`, then team `u` is stronger than team `w`.
 ```
 
