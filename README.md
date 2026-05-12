@@ -10,5 +10,3 @@
 8. [Possible Bipartition](Problem08.md) **(3 points)**
 9. [Problem09](Problem09.md) **(3 points)**
 10. [Problem10](Problem10.md) **(3 points)**
-
-2.0 2.0 2.0  3.0 3.0 3.0             2.5 2.5 2.5 2.5
