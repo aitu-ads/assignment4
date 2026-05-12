@@ -1,6 +1,6 @@
-### Problem 9. Network Delay Time (Bellman-Ford)
+### Problem 9. Network Delay Time 2 (Bellman-Ford)
 
-(Use Bellman-Ford's shortest path algorithm to solve the problem)
+(Use **Bellman-Ford**'s shortest path algorithm to solve the problem)
 
 You are given a network of `n` nodes, labeled from `1` to `n`.
 You are also given `times`, a list of travel times as directed edges `times[i] = (u[i], v[i], w[i])`,

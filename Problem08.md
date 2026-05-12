@@ -1,6 +1,6 @@
-### Problem 8. Network Delay Time (Dijkstra)
+### Problem 8. Network Delay Time 1 (Dijkstra)
 
-(Use Dijkstra's shortest path algorithm to solve the problem)
+(Use **Dijkstra**'s shortest path algorithm to solve the problem)
 
 You are given a network of `n` nodes, labeled from `1` to `n`.
 You are also given `times`, a list of travel times as directed edges `times[i] = (u[i], v[i], w[i])`,

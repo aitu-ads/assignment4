@@ -7,6 +7,6 @@
 5. [Find if Path Exists in Graph](Problem05.md) **(2.5 points)**
 6. [Remove Methods](Problem06.md) **(2.5 points)**
 7. [Is Bipartition Possible](Problem07.md) **(2.5 points)** 
-8. [Network Delay Time (Dijkstra)](Problem08.md) **(3 points)**
-9. [Network Delay Time (Bellman-Ford)](Problem09.md) **(3 points)**
-10. [Network Delay Time (Floyd-Warshall)](Problem10.md) **(3 points)**
+8. [Network Delay Time 1](Problem08.md) **(3 points)**
+9. [Network Delay Time 2](Problem09.md) **(3 points)**
+10. [Network Delay Time 3](Problem10.md) **(3 points)**

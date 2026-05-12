@@ -1,6 +1,6 @@
-### Problem 9. Network Delay Time (Floyd-Warshall)
+### Problem 9. Network Delay Time 3 (Floyd-Warshall)
 
-(Use Floyd-Warshall's shortest path algorithm to solve the problem)
+(Use **Floyd-Warshall**'s shortest path algorithm to solve the problem)
 
 You are given a network of `n` nodes, labeled from `1` to `n`.
 You are also given `times`, a list of travel times as directed edges `times[i] = (u[i], v[i], w[i])`,
