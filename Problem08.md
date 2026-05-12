@@ -20,6 +20,8 @@ Alternatively, we could use Dijkstra's algorithm.
 
 #### Example 1:
 
+<img width="217" height="239" alt="image" src="https://github.com/user-attachments/assets/3e3d3ab3-9c34-4ccd-9c8e-3e5f670d09f0" />
+
 ```
 Input: times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, k = 2
 Output: 2
