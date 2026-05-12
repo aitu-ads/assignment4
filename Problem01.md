@@ -3,11 +3,11 @@
 There are `n` teams numbered from `0` to `n-1` in a tournament; each team is also a node in a DAG (Directed Acyclic Graph).
 
 You are given the integer `n` and a **0-indexed** 2D integer array `edges` of length `m` representing the DAG,
-where `edges[i] = {u, v}` indicates that there is a directed edge from team `u` to team `v` in the graph.
+where `edges[i] = {u[i], v[i]}` indicates that there is a directed edge from team `u[i]` to team `v[i]` in the graph.
 
-A directed edge from `u` to `v` in the graph means that team `u` is stronger than team `v` and team `v` is weaker than team `u`.
+A directed edge from `a` to `b` in the graph means that team `a` is stronger than team `b` and team `b` is weaker than team `a`.
 
-Team `u` will be the champion of the tournament if there is no team `v` that is stronger than team `u`.
+Team `a` will be the champion of the tournament if there is no team `b` that is stronger than team `a`.
 
 Return _the team that will be the **champion** of the tournament if there is a **unique** champion, otherwise, return_ `-1`.
 
