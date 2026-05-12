@@ -1,4 +1,6 @@
-### Problem 8. Network Delay Time
+### Problem 8. Network Delay Time (Dijkstra)
+
+(Use Dijkstra's shortest path algorithm to solve the problem)
 
 You are given a network of `n` nodes, labeled from `1` to `n`.
 You are also given `times`, a list of travel times as directed edges `times[i] = (u[i], v[i], w[i])`,
@@ -13,9 +15,7 @@ Write your solution in [src/Problem08.java](src/Problem08.java)
 
 <details>
 <summary>Hint 1</summary>
-We visit each node at some time, and if that time is better than the fastest time we've reached this node,
-we travel along outgoing edges in sorted order.
-Alternatively, we could use Dijkstra's algorithm.
+Use Dijkstra's algorithm.
 </details>
 
 #### Example 1:
