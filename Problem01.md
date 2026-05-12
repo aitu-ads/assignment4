@@ -21,7 +21,14 @@ and there is a directed edge from the node `a[i]` to node `a[i+1]` for every `i`
 
 Write your solution in [src/Problem01.java](src/Problem01.java)
 
+<details>
+<summary> Hint</summary>
+The champion(s) should have in-degree 0 in the DAG.
+</details>
+
 #### Example 1:
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/27593015-a7f6-4730-8da8-e8374d09bbcf" />
 
 ```
 Input: n = 3, edges = [[0,1],[1,2]]
@@ -30,6 +37,8 @@ Explanation: Team 1 is weaker than team 0. Team 2 is weaker than team 1. So the 
 ```
 
 #### Example 2:
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/c7b80104-fbfc-4a6c-8054-4b7c5f7a4c7a" />
 
 ```
 Input: n = 4, edges = [[0,2],[1,3],[1,2]]
@@ -49,3 +58,4 @@ edges[i][0] != edges[i][1]
 The input is generated such that if team u is stronger than team v, team v is not stronger than team u.
 The input is generated such that if team u is stronger than team v and team v is stronger than team w, then team u is stronger than team w.
 ```
+
