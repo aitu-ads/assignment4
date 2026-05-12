@@ -33,7 +33,7 @@ Output: false
 Explanation: There is no path from vertex 0 to vertex 5.
 ```
 
-#### Constraintes
+#### Constraints
 
 
 + `1 <= n <= 200000`
