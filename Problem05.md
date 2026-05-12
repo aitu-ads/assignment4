@@ -1,14 +1,14 @@
-### Problem B2. Find if Path Exists in Graph
+### Problem 5. Find if Path Exists in Graph
 
 There is a **bi-directional** graph with `n` vertices, where each vertex is labeled from `0` to `n-1` (**inclusive**).
-The edges in the graph are represented as a 2D integer array `edges`, where each `edges[i] = {u, v}` denotes a bi-directional edge between vertex `u` and vertex `v`.
+The edges in the graph are represented as a 2D integer array `edges`, where each `edges[i] = {u[i], v[i]}` denotes a bi-directional edge between vertex `u[i]` and vertex `v[i]`.
 Every vertex pair is connected by **at most one** edge, and no vertex has an edge to itself.
 
 You want to determine if there is a **valid path** that exists from vertex `source` to vertex `destination`.
 
 Given edges and the integers `n`, `source`, and `destination`, return `true` if there is a valid path from `source` to `destination`, or `false` otherwise.
 
-Write your solution in [src/ProblemB2.java](src/ProblemB2.java)
+Write your solution in [src/Problem05.java](src/Problem05.java)
 
 #### Example 1:
 
@@ -35,13 +35,13 @@ Explanation: There is no path from vertex 0 to vertex 5.
 
 #### Constraintes
 
-```
-1 <= n <= 200000
-0 <= edges.length <= 200000
-edges[i].length == 2
-0 <= u, v <= n-1
-u != v
-0 <= source, destination <= n-1
-There are no duplicate edges.
-There are no self edges.
-```
+
++ `1 <= n <= 200000`
++ `0 <= edges.length <= 200000`
++ `edges[i].length == 2`
++ `0 <= u[i], v[i] <= n-1`
++ `u[i] != v[i]`
++ `0 <= source, destination <= n-1`
++ There are no duplicate edges.
++ There are no self edges.
+
