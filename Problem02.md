@@ -25,6 +25,7 @@ Any two edges must have a common node, which is the center.
 
 #### Example 1:
 
+<img width="331" height="321" alt="image" src="https://github.com/user-attachments/assets/6d4e2173-60bd-4351-a15c-d60481fa2406" />
 
 ```
 Input: edges = [[1,2],[2,3],[4,2]]
