@@ -1,5 +1,8 @@
+import java.util.List;
+
 public class Problem06 {
-    public boolean isBipartitionPossible(int n, int[][] dislikes) {
-        return false;
+    public List<Integer> remainingMethods(int n, int k, int[][] invocations) {
+        // write your solution here
+        return null;
     }
 }

@@ -1,32 +1,63 @@
 ### Problem 6. Remove Methods
 
-We want to split a group of `n` people (labeled from `1` to `n`) into two groups of **any size**.
-Each person may dislike some other people, and they should not go into the same group.
+You are maintaining a project that has `n` methods numbered from `0` to `n-1`.
 
-Given the integer `n` and the array `dislikes` where `dislikes[i] = {a[i], b[i]}` indicates that the person labeled `a[i]` does not like the person labeled `b[i]`,
-return `true` _if it is possible to split everyone into two groups in this way_.
+You are given two integers `n` and `k`, and a 2D integer array `invocations`,
+where `invocations[i] = [a[i], b[i]]` indicates that method `a[i]` invokes method `b[i]`.
+
+There is a known bug in method `k`. Method `k`, along with any method invoked by it, either **directly** or **indirectly**,
+are considered **suspicious**, and we aim to remove them.
+
+A group of methods can only be removed if no method **outside** the group invokes any methods **within** it.
+
+Return an array containing all the _remaining methods_ after removing all the **suspicious** methods. You may return the answer in _any order_.
+If it is not possible to remove **all** the suspicious methods, **none** should be removed.
 
 Write your solution in [src/Problem06.java](src/Problem06.java)
 
+<details>
+<summary> Hint 1</summary>
+Use DFS from node k.
+</details>
+
+<details>
+<summary> Hint 2</summary>
+Mark all the nodes visited from node k, and then check if they can be visited from the other nodes.
+</details>
+
+
 #### Example 1:
+
 ```
-Input: n = 4, dislikes = [[1,2],[1,3],[2,4]]
-Output: true
-Explanation: The first group has [1,4], and the second group has [2,3].
+Input: n = 4, k = 1, invocations = [[1,2],[0,1],[3,2]]
+Output: [0,1,2,3]
+Explanation:
+Method 2 and method 1 are suspicious, but they are directly invoked by methods 3 and 0, which are not suspicious. We return all elements without removing anything.
 ```
+
 #### Example 2:
 
 ```
-Input: n = 3, dislikes = [[1,2],[1,3],[2,3]]
-Output: false
-Explanation: We need at least 3 groups to divide them. We cannot put them in two groups.
+Input: n = 5, k = 0, invocations = [[1,2],[0,2],[0,1],[3,4]]
+Output: [3,4]
+Explanation:
+Methods 0, 1, and 2 are suspicious and they are not directly invoked by any other method. We can remove them.
+```
+
+#### Example 3:
+```
+Input: n = 3, k = 2, invocations = [[1,2],[0,1],[2,0]]
+Output: []
+Explanation:
+All methods are suspicious. We can remove them.
 ```
 
 #### Constraints
 
-+ `1 <= n <= 2000`
-+ `0 <= dislikes.length <= 10000`
-+ `dislikes[i].length == 2`
-+ `1 <= a[i] < b[i] <= n`
-+ All the pairs of `dislikes` are **unique**.
-
++ `1 <= n <= 100000`
++ `0 <= k <= n-1`
++ `0 <= invocations.length <= 2 * 100000`
++ `invocations[i] == [a[i], b[i]]`
++ `0 <= a[i], b[i] <= n-1`
++ `a[i] != b[i]`
++ `invocations[i] != invocations[j]`
