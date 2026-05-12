@@ -1,4 +1,4 @@
-### Problem B1. Number of Provinces
+### Problem 4. Number of Provinces
 
 There are `n` cities.
 Some of them are connected, while some are not.
@@ -10,7 +10,7 @@ You are given an `n` by `n` matrix `isConnected` where `isConnected[i][j] = 1` i
 
 Return *the total number* of **provinces**.
 
-Write your solution in [src/ProblemB1.java](src/ProblemB1.java)
+Write your solution in [src/Problem4.java](src/Problem4.java)
 
 #### Example 1:
 
@@ -32,11 +32,9 @@ Output: 3
 
 #### Constraints
 
-```
-1 <= n <= 200
-n == isConnected.length
-n == isConnected[i].length
-isConnected[i][j] is 1 or 0
-isConnected[i][i] == 1
-isConnected[i][j] == isConnected[j][i]
-```
++ `1 <= n <= 200`
++ `n == isConnected.length`
++ `n == isConnected[i].length`
++ `isConnected[i][j]` is `1` or `0`
++ `isConnected[i][i] == 1`
++ `isConnected[i][j] == isConnected[j][i]`
